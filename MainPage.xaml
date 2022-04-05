@@ -59,7 +59,7 @@
         <Button x:Name="_9" Content="9" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="263,65,0,0" FontSize="36" FontWeight="Bold" Click="_9_Click"/>
         <Button x:Name="_0" Content="0" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,215,0,0" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Click="_0_Click"/>
         <Button x:Name="point___bt" Content="." Height="72" Width="128" CornerRadius="4,4,4,24" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,215,263,0" VerticalAlignment="Center" FontSize="36" FontWeight="Bold"/>
-        <Button x:Name="and" Content="2" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold" Click="and_Click" VerticalAlignment="Center"/>
+        <Button x:Name="and" Content="+" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold" Click="and_Click" VerticalAlignment="Center"/>
 
     </Grid>
 </Page>
