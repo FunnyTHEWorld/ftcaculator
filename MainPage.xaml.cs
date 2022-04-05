@@ -23,8 +23,7 @@ namespace ftcaculator
     public sealed partial class MainPage : Page
     {
         string precaculate;
-        bool _ifinsertedsymbol=false ;
-        string precaculate2;
+        string precaculate2="";
         string insertedsymbol;
         decimal result;
 
@@ -36,179 +35,178 @@ namespace ftcaculator
 
         private void _1_Click(object sender, RoutedEventArgs e)
         {
-            if (_ifinsertedsymbol = true)
+            if (insertedsymbol == "")
             {
-                precaculate2 = precaculate2 + "1";
-                resultBlk.Text = precaculate2;
+                precaculate = precaculate + "1";
+                resultBlk.Text = precaculate;
+
             }
             else 
             {
-                if (resultBlk.Text == "0")
-                {
-                    precaculate = "1";
-                    resultBlk.Text = precaculate;
-                }
-                else
-                {
-                    precaculate = precaculate + "1";
-                    resultBlk.Text = precaculate;
-                }
+                precaculate2 = precaculate2 + "1";
+                resultBlk.Text =precaculate2;
             }
-           
         }
 
         private void _2_Click(object sender, RoutedEventArgs e)
         {
-            if (resultBlk.Text == "0")
+            if (insertedsymbol == "")
             {
-                precaculate = "2";
-                resultBlk.Text =precaculate;
+                precaculate = precaculate + "2";
+                resultBlk.Text = precaculate;
+
             }
             else
             {
-                precaculate =precaculate + "2";
-                resultBlk .Text = precaculate;
+                precaculate2 = precaculate2 + "2";
+                resultBlk.Text = precaculate2;
             }
         }
 
         private void _3_Click(object sender, RoutedEventArgs e)
         {
-            if (resultBlk.Text == "0")
+            if (insertedsymbol == "")
             {
-                precaculate = "3";
-                resultBlk .Text =precaculate;
+                precaculate = precaculate + "3";
+                resultBlk.Text = precaculate;
+
             }
             else
             {
-                precaculate = precaculate + "3";
-                resultBlk .Text =precaculate;
+                precaculate2 = precaculate2 + "3";
+                resultBlk.Text = precaculate2;
             }
         }
 
         private void _4_Click(object sender, RoutedEventArgs e)
         {
-            if (resultBlk.Text == "0")
+            if (insertedsymbol == "")
             {
-                precaculate = "4";
+                precaculate = precaculate + "4";
                 resultBlk.Text = precaculate;
 
             }
             else
             {
-                precaculate = precaculate + "4";
-                resultBlk .Text =precaculate;
-
+                precaculate2 = precaculate2 + "4";
+                resultBlk.Text = precaculate2;
             }
         }
 
         private void _5_Click(object sender, RoutedEventArgs e)
         {
-            if (resultBlk.Text == "0")
-            {
-                precaculate = "5";
-                resultBlk.Text = precaculate;
-
-            }
-            else
+            if (insertedsymbol == "")
             {
                 precaculate = precaculate + "5";
                 resultBlk.Text = precaculate;
 
             }
+            else
+            {
+                precaculate2 = precaculate2 + "5";
+                resultBlk.Text = precaculate2;
+            }
         }
 
         private void _6_Click(object sender, RoutedEventArgs e)
         {
-            if (resultBlk.Text == "0")
+            if (insertedsymbol == "")
             {
-                precaculate = "6";
+                precaculate = precaculate + "6";
                 resultBlk.Text = precaculate;
+
             }
             else
-            { 
-                precaculate = precaculate + "6";
-                resultBlk .Text =precaculate;
+            {
+                precaculate2 = precaculate2 + "6";
+                resultBlk.Text = precaculate2;
             }
         }
 
         private void _7_Click(object sender, RoutedEventArgs e)
         {
-            if (resultBlk.Text == "0")
-            {
-                precaculate = "7";
-                resultBlk.Text = precaculate;
-            }
-            else
+            if (insertedsymbol == "")
             {
                 precaculate = precaculate + "7";
                 resultBlk.Text = precaculate;
+
+            }
+            else
+            {
+                precaculate2 = precaculate2 + "7";
+                resultBlk.Text = precaculate2;
             }
         }
 
         private void _8_Click(object sender, RoutedEventArgs e)
         {
-            if (resultBlk.Text == "0")
+            if (insertedsymbol == "")
             {
-                precaculate = "8";
+                precaculate = precaculate + "8";
                 resultBlk.Text = precaculate;
+
             }
             else
             {
-                precaculate = precaculate + "8";
-                resultBlk .Text =precaculate;
-
+                precaculate2 = precaculate2 + "8";
+                resultBlk.Text = precaculate2;
             }
         }
 
         private void _9_Click(object sender, RoutedEventArgs e)
         {
-            if (resultBlk.Text == "0")
-            {
-                precaculate = "9";
-                resultBlk.Text = precaculate;
-            }
-            else
+            if (insertedsymbol == "")
             {
                 precaculate = precaculate + "9";
                 resultBlk.Text = precaculate;
+
+            }
+            else
+            {
+                precaculate2 = precaculate2 + "9";
+                resultBlk.Text = precaculate2;
             }
         }
 
         private void _0_Click(object sender, RoutedEventArgs e)
         {
-            if (resultBlk.Text == "0")
+            if (insertedsymbol == "")
             {
-                precaculate = "0";
+                precaculate = precaculate + "0";
                 resultBlk.Text = precaculate;
+
             }
             else
             {
-                precaculate =precaculate + "0";
-                resultBlk .Text =precaculate;
+                precaculate2 = precaculate2 + "0";
+                resultBlk.Text = precaculate2;
             }
         }
 
         private void and_Click(object sender, RoutedEventArgs e)
         {
             insertedsymbol = "and";
-            _ifinsertedsymbol = true;
+            bool _isistsbNull=(insertedsymbol =="");
+            tbk1.Text = insertedsymbol+" "+Convert .ToString (_isistsbNull );
+
 
         }
 
         private void caculateBt_Click(object sender, RoutedEventArgs e)
         {
-            if (_ifinsertedsymbol = false)
+            if (insertedsymbol=="")
             {
 
             }
-            else
+            else if (insertedsymbol == "and")
             {
-                if (insertedsymbol == "and")
-                {
-                    result = Convert .ToDecimal(precaculate)+Convert .ToDecimal(precaculate2);
-                    resultBlk.Text = result.ToString ();
-                }
+                result = Convert .ToDecimal(precaculate)+Convert .ToDecimal(precaculate2);
+                resultBlk.Text = result.ToString ();
+                precaculate = "";
+                precaculate2 = "";
+
             }
+            
         }
     }
 }

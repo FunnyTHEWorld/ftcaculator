@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" MinWidth="500" MinHeight="700">
+
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.ThemeDictionaries>
@@ -18,7 +19,7 @@
                               />
                     <AcrylicBrush x:Key="MyAcrylicNonAccentElementsBrush"
                               BackgroundSource="HostBackdrop"
-                              TintColor="{ThemeResource SystemAccentColorDark2}"
+                              TintColor="{ThemeResource SystemAccentColor}"
                               TintOpacity="0.5"
                               TintLuminosityOpacity="0.5"
                               FallbackColor="#FF373737"
@@ -39,7 +40,7 @@
 
 
     <Grid Background="{ThemeResource MyAcrylicBackgroundBrush}">
-        <Button x:Name="caculateBt" Content="=" Height="72" Width="128" Visibility="Visible" VerticalAlignment="Center" CornerRadius="4,4,16,4" HorizontalAlignment="Center" Margin="263,215,0,0" FontSize="36" FontWeight="Bold" Click="caculateBt_Click">
+        <Button x:Name="caculateBt" Content="=" Height="72" Width="128" Visibility="Visible" VerticalAlignment="Center" CornerRadius="4,4,16,4" HorizontalAlignment="Center" Margin="161,215,0,0" FontSize="36" FontWeight="Bold" Click="caculateBt_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="1,1" StartPoint="0,0" Opacity="0.7">
                     <GradientStop Color="{ThemeResource SystemAccentColorLight3}"/>
@@ -47,19 +48,20 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="resultBlk" HorizontalAlignment="Center" Height="120" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" Width="350" FontSize="48" FontWeight="Bold" Margin="0,0,0,450" />
-        <Button x:Name="_1" Content="1" Height="72" VerticalAlignment="Center" Width="128" CornerRadius="24,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,0,263,235" FontSize="36" FontWeight="Bold" Click="_1_Click"/>
-        <Button x:Name="_5" Content="5" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,0,0,85" FontSize="36" FontWeight="Bold" Click="_5_Click"/>
-        <Button x:Name="_3" Content="3" Height="72" Width="128" CornerRadius="4,24,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="263,0,0,235" FontSize="36" FontWeight="Bold" Click="_3_Click"/>
-        <Button x:Name="_2" Content="2" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,0,0,235" FontSize="36" FontWeight="Bold" Click="_2_Click"/>
-        <Button x:Name="_4" Content="4" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,0,263,85" FontSize="36" FontWeight="Bold" Click="_4_Click"/>
-        <Button x:Name="_6" Content="6" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="263,0,0,85" FontSize="36" FontWeight="Bold" Click="_6_Click"/>
-        <Button x:Name="_7" Content="7" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,65,263,0" FontSize="36" FontWeight="Bold" Click="_7_Click"/>
-        <Button x:Name="_8" Content="8" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,65,0,0" FontSize="36" FontWeight="Bold" Click="_8_Click"/>
-        <Button x:Name="_9" Content="9" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="263,65,0,0" FontSize="36" FontWeight="Bold" Click="_9_Click"/>
-        <Button x:Name="_0" Content="0" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,215,0,0" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Click="_0_Click"/>
-        <Button x:Name="point___bt" Content="." Height="72" Width="128" CornerRadius="4,4,4,24" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,215,263,0" VerticalAlignment="Center" FontSize="36" FontWeight="Bold"/>
-        <Button x:Name="and" Content="+" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold" Click="and_Click" VerticalAlignment="Center"/>
-
+        <TextBlock x:Name="resultBlk" HorizontalAlignment="Center" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" Margin="0,0,0,450" Height="Auto" />
+        <Button x:Name="_1" Content="1" Height="72" VerticalAlignment="Center" Width="128" CornerRadius="24,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,0,365,235" FontSize="36" FontWeight="Bold" Click="_1_Click"/>
+        <Button x:Name="_5" Content="5" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,0,101,85" FontSize="36" FontWeight="Bold" Click="_5_Click"/>
+        <Button x:Name="_3" Content="3" Height="72" Width="128" CornerRadius="4,24,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="161,0,0,235" FontSize="36" FontWeight="Bold" Click="_3_Click"/>
+        <Button x:Name="_2" Content="2" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,0,101,235" FontSize="36" FontWeight="Bold" Click="_2_Click"/>
+        <Button x:Name="_4" Content="4" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,0,365,85" FontSize="36" FontWeight="Bold" Click="_4_Click"/>
+        <Button x:Name="_6" Content="6" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="161,0,0,85" FontSize="36" FontWeight="Bold" Click="_6_Click"/>
+        <Button x:Name="_7" Content="7" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,65,365,0" FontSize="36" FontWeight="Bold" Click="_7_Click"/>
+        <Button x:Name="_8" Content="8" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,65,101,0" FontSize="36" FontWeight="Bold" Click="_8_Click"/>
+        <Button x:Name="_9" Content="9" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="161,65,0,0" FontSize="36" FontWeight="Bold" Click="_9_Click"/>
+        <Button x:Name="_0" Content="0" Height="72" Width="128" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,215,101,0" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Click="_0_Click"/>
+        <Button x:Name="point___bt" Content="." Height="72" Width="128" CornerRadius="4,4,4,24" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" Margin="0,215,365,0" VerticalAlignment="Center" FontSize="36" FontWeight="Bold"/>
+        <Button x:Name="and" Content="+" Height="72" Width="88" CornerRadius="4,4,44,44" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold" Click="and_Click" VerticalAlignment="Center" Margin="400,215,0,0"/>
+        <Button x:Name="_diaand" Content="+" Height="72" Width="88" CornerRadius="4,4,4,4" Background="{StaticResource MyAcrylicNonAccentElementsBrush}" FontSize="36" FontWeight="Bold" Click="and_Click" VerticalAlignment="Center" Margin="400,65,0,0" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="tbk1" HorizontalAlignment="Center" Margin="0,350,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center"/>
     </Grid>
 </Page>
